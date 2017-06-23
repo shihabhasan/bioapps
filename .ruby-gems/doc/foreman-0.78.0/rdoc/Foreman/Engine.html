@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=US-ASCII" http-equiv="Content-Type" />
+
+  <title>Class: Foreman::Engine</title>
+
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../lib/foreman/engine_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/foreman/engine.rb">lib/foreman/engine.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Object</p>
+        
+      </div>
+      
+
+      
+
+      
+      <!-- Namespace Contents -->
+      <div id="namespace-list-section" class="section">
+        <h3 class="section-header">Namespace</h3>
+        <ul class="link-list">
+          
+          <li><span class="type">CLASS</span> <a href="Engine/CLI.html">Foreman::Engine::CLI</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-base_port">#base_port</a></li>
+          
+          <li><a href="#method-i-clear">#clear</a></li>
+          
+          <li><a href="#method-i-each_process">#each_process</a></li>
+          
+          <li><a href="#method-i-environment">#environment</a></li>
+          
+          <li><a href="#method-i-formation">#formation</a></li>
+          
+          <li><a href="#method-i-handle_hangup">#handle_hangup</a></li>
+          
+          <li><a href="#method-i-handle_interrupt">#handle_interrupt</a></li>
+          
+          <li><a href="#method-i-handle_signal">#handle_signal</a></li>
+          
+          <li><a href="#method-i-handle_term_signal">#handle_term_signal</a></li>
+          
+          <li><a href="#method-i-kill_children">#kill_children</a></li>
+          
+          <li><a href="#method-i-killall">#killall</a></li>
+          
+          <li><a href="#method-i-load_env">#load_env</a></li>
+          
+          <li><a href="#method-i-load_procfile">#load_procfile</a></li>
+          
+          <li><a href="#method-i-notice_signal">#notice_signal</a></li>
+          
+          <li><a href="#method-i-port_for">#port_for</a></li>
+          
+          <li><a href="#method-i-process">#process</a></li>
+          
+          <li><a href="#method-i-process_names">#process_names</a></li>
+          
+          <li><a href="#method-i-register">#register</a></li>
+          
+          <li><a href="#method-i-register_signal_handlers">#register_signal_handlers</a></li>
+          
+          <li><a href="#method-i-restore_default_signal_handlers">#restore_default_signal_handlers</a></li>
+          
+          <li><a href="#method-i-root">#root</a></li>
+          
+          <li><a href="#method-i-start">#start</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../Foreman.html">Foreman</a></li>
+        
+          <li><a href="../Foreman/CLI.html">Foreman::CLI</a></li>
+        
+          <li><a href="../Foreman/Distribution.html">Foreman::Distribution</a></li>
+        
+          <li><a href="../Foreman/Engine.html">Foreman::Engine</a></li>
+        
+          <li><a href="../Foreman/Engine/CLI.html">Foreman::Engine::CLI</a></li>
+        
+          <li><a href="../Foreman/Engine/CLI/Color.html">Foreman::Engine::CLI::Color</a></li>
+        
+          <li><a href="../Foreman/Env.html">Foreman::Env</a></li>
+        
+          <li><a href="../Foreman/Export.html">Foreman::Export</a></li>
+        
+          <li><a href="../Foreman/Export/Base.html">Foreman::Export::Base</a></li>
+        
+          <li><a href="../Foreman/Export/Bluepill.html">Foreman::Export::Bluepill</a></li>
+        
+          <li><a href="../Foreman/Export/Daemon.html">Foreman::Export::Daemon</a></li>
+        
+          <li><a href="../Foreman/Export/Exception.html">Foreman::Export::Exception</a></li>
+        
+          <li><a href="../Foreman/Export/Inittab.html">Foreman::Export::Inittab</a></li>
+        
+          <li><a href="../Foreman/Export/Launchd.html">Foreman::Export::Launchd</a></li>
+        
+          <li><a href="../Foreman/Export/Runit.html">Foreman::Export::Runit</a></li>
+        
+          <li><a href="../Foreman/Export/Supervisord.html">Foreman::Export::Supervisord</a></li>
+        
+          <li><a href="../Foreman/Export/Systemd.html">Foreman::Export::Systemd</a></li>
+        
+          <li><a href="../Foreman/Export/Upstart.html">Foreman::Export::Upstart</a></li>
+        
+          <li><a href="../Foreman/Helpers.html">Foreman::Helpers</a></li>
+        
+          <li><a href="../Foreman/Process.html">Foreman::Process</a></li>
+        
+          <li><a href="../Foreman/Procfile.html">Foreman::Procfile</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Foreman::Engine</h1>
+
+    <div id="description" class="description">
+      
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+      <!-- Constants -->
+      <div id="constants-list" class="section">
+        <h3 class="section-header">Constants</h3>
+        <dl>
+        
+          <dt><a name="HANDLED_SIGNALS">HANDLED_SIGNALS</a></dt>
+          
+          <dd class="description"><p>The signals that the engine cares about.</p></dd>
+          
+        
+        </dl>
+      </div>
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="env-attribute-method" class="method-detail">
+          <a name="env"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">env</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="options-attribute-method" class="method-detail">
+          <a name="options"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">options</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="processes-attribute-method" class="method-detail">
+          <a name="processes"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">processes</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(options={})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Create an <tt>Engine</tt> for running processes</p>
+
+<p>@param [Hash] options</p>
+
+<p>@option options [String] :formation (all=1)    The process formation to use
+@option options [Fixnum] :port      (5000)     The base port to assign to
+processes @option options [String] :root      (Dir.pwd)  The root directory
+from which to run processes</p>
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">options</span>={})
+  <span class="ruby-ivar">@options</span> = <span class="ruby-identifier">options</span>.<span class="ruby-identifier">dup</span>
+
+  <span class="ruby-ivar">@options</span>[<span class="ruby-value">:formation</span>] <span class="ruby-operator">||=</span> (<span class="ruby-identifier">options</span>[<span class="ruby-value">:concurrency</span>] <span class="ruby-operator">||</span> <span class="ruby-string">&quot;all=1&quot;</span>)
+  <span class="ruby-ivar">@options</span>[<span class="ruby-value">:timeout</span>] <span class="ruby-operator">||=</span> <span class="ruby-value">5</span>
+
+  <span class="ruby-ivar">@env</span>       = {}
+  <span class="ruby-ivar">@mutex</span>     = <span class="ruby-constant">Mutex</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-ivar">@names</span>     = {}
+  <span class="ruby-ivar">@processes</span> = []
+  <span class="ruby-ivar">@running</span>   = {}
+  <span class="ruby-ivar">@readers</span>   = {}
+
+  <span class="ruby-comment"># Self-pipe for deferred signal-handling (ala djb: http://cr.yp.to/docs/selfpipe.html)</span>
+  <span class="ruby-identifier">reader</span>, <span class="ruby-identifier">writer</span>       = <span class="ruby-identifier">create_pipe</span>
+  <span class="ruby-identifier">reader</span>.<span class="ruby-identifier">close_on_exec</span> = <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">reader</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:close_on_exec</span>)
+  <span class="ruby-identifier">writer</span>.<span class="ruby-identifier">close_on_exec</span> = <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">writer</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:close_on_exec</span>)
+  <span class="ruby-ivar">@selfpipe</span>            = { <span class="ruby-value">:reader</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">reader</span>, <span class="ruby-value">:writer</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">writer</span> }
+
+  <span class="ruby-comment"># Set up a global signal queue</span>
+  <span class="ruby-comment"># http://blog.rubybestpractices.com/posts/ewong/016-Implementing-Signal-Handlers.html</span>
+  <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">main</span>[<span class="ruby-value">:signal_queue</span>] = []
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="base_port-method" class="method-detail ">
+          <a name="method-i-base_port"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">base_port</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Get the base port for this foreman instance</p>
+
+<p>@returns [Fixnum] port  The base port</p>
+            
+
+            
+            <div class="method-source-code" id="base_port-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 274</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">base_port</span>
+  (<span class="ruby-identifier">options</span>[<span class="ruby-value">:port</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">env</span>[<span class="ruby-string">&quot;PORT&quot;</span>] <span class="ruby-operator">||</span> <span class="ruby-constant">ENV</span>[<span class="ruby-string">&quot;PORT&quot;</span>] <span class="ruby-operator">||</span> <span class="ruby-value">5000</span>).<span class="ruby-identifier">to_i</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- base_port-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- base_port-method -->
+
+      
+        <div id="clear-method" class="method-detail ">
+          <a name="method-i-clear"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">clear</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Clear the processes registered to this <tt>Engine</tt></p>
+            
+
+            
+            <div class="method-source-code" id="clear-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 150</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">clear</span>
+  <span class="ruby-ivar">@names</span>     = {}
+  <span class="ruby-ivar">@processes</span> = []
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- clear-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- clear-method -->
+
+      
+        <div id="each_process-method" class="method-detail ">
+          <a name="method-i-each_process"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">each_process</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Yield each <tt>Process</tt> in order</p>
+            
+
+            
+            <div class="method-source-code" id="each_process-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 241</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">each_process</span>
+  <span class="ruby-identifier">process_names</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">yield</span> <span class="ruby-identifier">name</span>, <span class="ruby-identifier">process</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- each_process-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- each_process-method -->
+
+      
+        <div id="environment-method" class="method-detail ">
+          <a name="method-i-environment"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">environment</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>deprecated</p>
+            
+
+            
+            <div class="method-source-code" id="environment-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 279</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">environment</span>
+  <span class="ruby-identifier">env</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- environment-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- environment-method -->
+
+      
+        <div id="formation-method" class="method-detail ">
+          <a name="method-i-formation"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">formation</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Get the process formation</p>
+
+<p>@returns [Fixnum]  The formation count for the specified process</p>
+            
+
+            
+            <div class="method-source-code" id="formation-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 217</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">formation</span>
+  <span class="ruby-ivar">@formation</span> <span class="ruby-operator">||=</span> <span class="ruby-identifier">parse_formation</span>(<span class="ruby-identifier">options</span>[<span class="ruby-value">:formation</span>])
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- formation-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- formation-method -->
+
+      
+        <div id="handle_hangup-method" class="method-detail ">
+          <a name="method-i-handle_hangup"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">handle_hangup</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Handle a HUP signal</p>
+            
+
+            
+            <div class="method-source-code" id="handle_hangup-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 127</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">handle_hangup</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;SIGHUP received&quot;</span>
+  <span class="ruby-identifier">terminate_gracefully</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- handle_hangup-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- handle_hangup-method -->
+
+      
+        <div id="handle_interrupt-method" class="method-detail ">
+          <a name="method-i-handle_interrupt"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">handle_interrupt</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Handle an INT signal</p>
+            
+
+            
+            <div class="method-source-code" id="handle_interrupt-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 120</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">handle_interrupt</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;SIGINT received&quot;</span>
+  <span class="ruby-identifier">terminate_gracefully</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- handle_interrupt-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- handle_interrupt-method -->
+
+      
+        <div id="handle_signal-method" class="method-detail ">
+          <a name="method-i-handle_signal"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">handle_signal</span><span
+              class="method-args">(sig)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Invoke the real handler for signal <tt>sig</tt>. This shouldn't be called
+directly by signal handlers, as it might invoke code which isn't
+re-entrant.</p>
+
+<p>@param [Symbol] sig  the name of the signal to be handled</p>
+            
+
+            
+            <div class="method-source-code" id="handle_signal-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 98</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">handle_signal</span>(<span class="ruby-identifier">sig</span>)
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">sig</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:TERM</span>
+    <span class="ruby-identifier">handle_term_signal</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:INT</span>
+    <span class="ruby-identifier">handle_interrupt</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:HUP</span>
+    <span class="ruby-identifier">handle_hangup</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">system</span> <span class="ruby-node">&quot;unhandled signal #{sig}&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- handle_signal-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- handle_signal-method -->
+
+      
+        <div id="handle_term_signal-method" class="method-detail ">
+          <a name="method-i-handle_term_signal"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">handle_term_signal</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Handle a TERM signal</p>
+            
+
+            
+            <div class="method-source-code" id="handle_term_signal-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 113</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">handle_term_signal</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;SIGTERM received&quot;</span>
+  <span class="ruby-identifier">terminate_gracefully</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- handle_term_signal-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- handle_term_signal-method -->
+
+      
+        <div id="kill_children-method" class="method-detail ">
+          <a name="method-i-kill_children"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">kill_children</span><span
+              class="method-args">(signal="SIGTERM")</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Send a signal to all processes started by this <tt>Engine</tt></p>
+
+<p>@param [String] signal  The signal to send to each process</p>
+            
+
+            
+            <div class="method-source-code" id="kill_children-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 181</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">kill_children</span>(<span class="ruby-identifier">signal</span>=<span class="ruby-string">&quot;SIGTERM&quot;</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">Foreman</span>.<span class="ruby-identifier">windows?</span>
+    <span class="ruby-ivar">@running</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">pid</span>, (<span class="ruby-identifier">process</span>, <span class="ruby-identifier">index</span>)<span class="ruby-operator">|</span>
+      <span class="ruby-identifier">system</span> <span class="ruby-node">&quot;sending #{signal} to #{name_for(pid)} at pid #{pid}&quot;</span>
+      <span class="ruby-keyword">begin</span>
+        <span class="ruby-constant">Process</span>.<span class="ruby-identifier">kill</span>(<span class="ruby-identifier">signal</span>, <span class="ruby-identifier">pid</span>)
+      <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">ESRCH</span>, <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">EPERM</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">begin</span>
+      <span class="ruby-constant">Process</span>.<span class="ruby-identifier">kill</span> <span class="ruby-identifier">signal</span>, *<span class="ruby-ivar">@running</span>.<span class="ruby-identifier">keys</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@running</span>.<span class="ruby-identifier">empty?</span>
+    <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">ESRCH</span>, <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">EPERM</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- kill_children-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- kill_children-method -->
+
+      
+        <div id="killall-method" class="method-detail ">
+          <a name="method-i-killall"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">killall</span><span
+              class="method-args">(signal="SIGTERM")</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Send a signal to the whole process group.</p>
+
+<p>@param [String] signal  The signal to send</p>
+            
+
+            
+            <div class="method-source-code" id="killall-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 202</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">killall</span>(<span class="ruby-identifier">signal</span>=<span class="ruby-string">&quot;SIGTERM&quot;</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">Foreman</span>.<span class="ruby-identifier">windows?</span>
+    <span class="ruby-identifier">kill_children</span>(<span class="ruby-identifier">signal</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">begin</span>
+      <span class="ruby-constant">Process</span>.<span class="ruby-identifier">kill</span> <span class="ruby-node">&quot;-#{signal}&quot;</span>, <span class="ruby-constant">Process</span>.<span class="ruby-identifier">pid</span>
+    <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">ESRCH</span>, <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">EPERM</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- killall-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- killall-method -->
+
+      
+        <div id="load_env-method" class="method-detail ">
+          <a name="method-i-load_env"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">load_env</span><span
+              class="method-args">(filename)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Load a .env file into the <tt>env</tt> for this <tt>Engine</tt></p>
+
+<p>@param [String] filename  A .env file to load into the environment</p>
+            
+
+            
+            <div class="method-source-code" id="load_env-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 171</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">load_env</span>(<span class="ruby-identifier">filename</span>)
+  <span class="ruby-constant">Foreman</span><span class="ruby-operator">::</span><span class="ruby-constant">Env</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">filename</span>).<span class="ruby-identifier">entries</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+    <span class="ruby-ivar">@env</span>[<span class="ruby-identifier">name</span>] = <span class="ruby-identifier">value</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- load_env-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- load_env-method -->
+
+      
+        <div id="load_procfile-method" class="method-detail ">
+          <a name="method-i-load_procfile"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">load_procfile</span><span
+              class="method-args">(filename)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Register processes by reading a <a href="Procfile.html">Procfile</a></p>
+
+<p>@param [String] filename  A <a href="Procfile.html">Procfile</a> from which
+to read processes to register</p>
+            
+
+            
+            <div class="method-source-code" id="load_procfile-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 159</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">load_procfile</span>(<span class="ruby-identifier">filename</span>)
+  <span class="ruby-identifier">options</span>[<span class="ruby-value">:root</span>] <span class="ruby-operator">||=</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-identifier">filename</span>)
+  <span class="ruby-constant">Foreman</span><span class="ruby-operator">::</span><span class="ruby-constant">Procfile</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">filename</span>).<span class="ruby-identifier">entries</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span>, <span class="ruby-identifier">command</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">register</span> <span class="ruby-identifier">name</span>, <span class="ruby-identifier">command</span>, <span class="ruby-value">:cwd</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:root</span>]
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">self</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- load_procfile-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- load_procfile-method -->
+
+      
+        <div id="notice_signal-method" class="method-detail ">
+          <a name="method-i-notice_signal"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">notice_signal</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Wake the main thread up via the selfpipe when there's a signal</p>
+            
+
+            
+            <div class="method-source-code" id="notice_signal-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 84</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">notice_signal</span>
+  <span class="ruby-ivar">@selfpipe</span>[<span class="ruby-value">:writer</span>].<span class="ruby-identifier">write_nonblock</span>( <span class="ruby-string">'.'</span> )
+<span class="ruby-keyword">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">EAGAIN</span>
+  <span class="ruby-comment"># Ignore writes that would block</span>
+<span class="ruby-keyword">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">EINT</span>
+  <span class="ruby-comment"># Retry if another signal arrived while writing</span>
+  <span class="ruby-keyword">retry</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- notice_signal-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- notice_signal-method -->
+
+      
+        <div id="port_for-method" class="method-detail ">
+          <a name="method-i-port_for"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">port_for</span><span
+              class="method-args">(process, instance, base=nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Get the port for a given process and offset</p>
+
+<p>@param [Foreman::Process] process   A <tt>Process</tt> associated with this
+engine @param [Fixnum]           instance  The instance of the process</p>
+
+<p>@returns [Fixnum] port  The port to use for this instance of this process</p>
+            
+
+            
+            <div class="method-source-code" id="port_for-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 262</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">port_for</span>(<span class="ruby-identifier">process</span>, <span class="ruby-identifier">instance</span>, <span class="ruby-identifier">base</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">base</span>
+    <span class="ruby-identifier">base</span> <span class="ruby-operator">+</span> (<span class="ruby-ivar">@processes</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">process</span>.<span class="ruby-identifier">process</span>) * <span class="ruby-value">100</span>) <span class="ruby-operator">+</span> (<span class="ruby-identifier">instance</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">base_port</span> <span class="ruby-operator">+</span> (<span class="ruby-ivar">@processes</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">process</span>) * <span class="ruby-value">100</span>) <span class="ruby-operator">+</span> (<span class="ruby-identifier">instance</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- port_for-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- port_for-method -->
+
+      
+        <div id="process-method" class="method-detail ">
+          <a name="method-i-process"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">process</span><span
+              class="method-args">(name)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Get the <tt>Process</tt> for a specifid name</p>
+
+<p>@param [String] name  The process name</p>
+
+<p>@returns [Foreman::Process]  The <tt>Process</tt> for the specified name</p>
+            
+
+            
+            <div class="method-source-code" id="process-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 235</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">process</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-ivar">@names</span>.<span class="ruby-identifier">invert</span>[<span class="ruby-identifier">name</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- process-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- process-method -->
+
+      
+        <div id="process_names-method" class="method-detail ">
+          <a name="method-i-process_names"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">process_names</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>List the available process names</p>
+
+<p>@returns [Array]  A list of process names</p>
+            
+
+            
+            <div class="method-source-code" id="process_names-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 225</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">process_names</span>
+  <span class="ruby-ivar">@processes</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span> <span class="ruby-ivar">@names</span>[<span class="ruby-identifier">p</span>] }
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- process_names-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- process_names-method -->
+
+      
+        <div id="register-method" class="method-detail ">
+          <a name="method-i-register"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">register</span><span
+              class="method-args">(name, command, options={})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Register a process to be run by this <tt>Engine</tt></p>
+
+<p>@param [String] name     A name for this process @param [String] command 
+The command to run @param [Hash]   options</p>
+
+<p>@option options [Hash] :env  A custom environment for this process</p>
+            
+
+            
+            <div class="method-source-code" id="register-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 140</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">register</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">command</span>, <span class="ruby-identifier">options</span>={})
+  <span class="ruby-identifier">options</span>[<span class="ruby-value">:env</span>] <span class="ruby-operator">||=</span> <span class="ruby-identifier">env</span>
+  <span class="ruby-identifier">options</span>[<span class="ruby-value">:cwd</span>] <span class="ruby-operator">||=</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-identifier">command</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot; &quot;</span>).<span class="ruby-identifier">first</span>)
+  <span class="ruby-identifier">process</span> = <span class="ruby-constant">Foreman</span><span class="ruby-operator">::</span><span class="ruby-constant">Process</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">command</span>, <span class="ruby-identifier">options</span>)
+  <span class="ruby-ivar">@names</span>[<span class="ruby-identifier">process</span>] = <span class="ruby-identifier">name</span>
+  <span class="ruby-ivar">@processes</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">process</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- register-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- register-method -->
+
+      
+        <div id="register_signal_handlers-method" class="method-detail ">
+          <a name="method-i-register_signal_handlers"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">register_signal_handlers</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Set up deferred signal handlers</p>
+            
+
+            
+            <div class="method-source-code" id="register_signal_handlers-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 66</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">register_signal_handlers</span>
+  <span class="ruby-constant">HANDLED_SIGNALS</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">sig</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-operator">::</span><span class="ruby-constant">Signal</span>.<span class="ruby-identifier">list</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">sig</span>.<span class="ruby-identifier">to_s</span>
+      <span class="ruby-identifier">trap</span>(<span class="ruby-identifier">sig</span>) { <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">main</span>[<span class="ruby-value">:signal_queue</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">sig</span> ; <span class="ruby-identifier">notice_signal</span> }
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- register_signal_handlers-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- register_signal_handlers-method -->
+
+      
+        <div id="restore_default_signal_handlers-method" class="method-detail ">
+          <a name="method-i-restore_default_signal_handlers"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">restore_default_signal_handlers</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Unregister deferred signal handlers</p>
+            
+
+            
+            <div class="method-source-code" id="restore_default_signal_handlers-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 76</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">restore_default_signal_handlers</span>
+  <span class="ruby-constant">HANDLED_SIGNALS</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">sig</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">trap</span>(<span class="ruby-identifier">sig</span>, <span class="ruby-value">:DEFAULT</span>) <span class="ruby-keyword">if</span> <span class="ruby-operator">::</span><span class="ruby-constant">Signal</span>.<span class="ruby-identifier">list</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">sig</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- restore_default_signal_handlers-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- restore_default_signal_handlers-method -->
+
+      
+        <div id="root-method" class="method-detail ">
+          <a name="method-i-root"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">root</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Get the root directory for this <tt>Engine</tt></p>
+
+<p>@returns [String]  The root directory</p>
+            
+
+            
+            <div class="method-source-code" id="root-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 251</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">root</span>
+  <span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-identifier">options</span>[<span class="ruby-value">:root</span>] <span class="ruby-operator">||</span> <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">pwd</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- root-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- root-method -->
+
+      
+        <div id="start-method" class="method-detail ">
+          <a name="method-i-start"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">start</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Start the processes registered to this <tt>Engine</tt></p>
+            
+
+            
+            <div class="method-source-code" id="start-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/engine.rb, line 54</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">start</span>
+  <span class="ruby-identifier">register_signal_handlers</span>
+  <span class="ruby-identifier">startup</span>
+  <span class="ruby-identifier">spawn_processes</span>
+  <span class="ruby-identifier">watch_for_output</span>
+  <span class="ruby-identifier">sleep</span> <span class="ruby-value">0.1</span>
+  <span class="ruby-identifier">watch_for_termination</span> { <span class="ruby-identifier">terminate_gracefully</span> }
+  <span class="ruby-identifier">shutdown</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- start-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- start-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

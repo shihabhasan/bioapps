@@ -1,0 +1,27 @@
+You are using pip version 6.0.8, however version 7.1.0 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+You are using pip version 6.0.8, however version 7.1.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting pip from https://pypi.python.org/packages/py2.py3/p/pip/pip-7.1.2-py2.py3-none-any.whl#md5=5ff9fec0be479e4e36df467556deed4d
+  Downloading pip-7.1.2-py2.py3-none-any.whl (1.1MB)
+Installing collected packages: pip
+  Found existing installation: pip 6.0.8
+    Uninstalling pip-6.0.8:
+      Exception:
+      Traceback (most recent call last):
+        File "/usr/local/lib/python2.7/dist-packages/pip/basecommand.py", line 232, in main
+          status = self.run(options, args)
+        File "/usr/local/lib/python2.7/dist-packages/pip/commands/install.py", line 347, in run
+          root=options.root_path,
+        File "/usr/local/lib/python2.7/dist-packages/pip/req/req_set.py", line 543, in install
+          requirement.uninstall(auto_confirm=True)
+        File "/usr/local/lib/python2.7/dist-packages/pip/req/req_install.py", line 667, in uninstall
+          paths_to_remove.remove(auto_confirm)
+        File "/usr/local/lib/python2.7/dist-packages/pip/req/req_uninstall.py", line 126, in remove
+          renames(path, new_path)
+        File "/usr/local/lib/python2.7/dist-packages/pip/utils/__init__.py", line 316, in renames
+          shutil.move(old, new)
+        File "/usr/lib/python2.7/shutil.py", line 303, in move
+          os.unlink(src)
+      OSError: [Errno 13] Permission denied: '/usr/bin/pip'
+

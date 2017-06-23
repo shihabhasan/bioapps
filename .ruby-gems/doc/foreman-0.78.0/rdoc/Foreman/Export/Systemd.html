@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=US-ASCII" http-equiv="Content-Type" />
+
+  <title>Class: Foreman::Export::Systemd</title>
+
+  <link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../../lib/foreman/export/systemd_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/foreman/export/systemd.rb">lib/foreman/export/systemd.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link"><a href="Base.html">Foreman::Export::Base</a></p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-i-export">#export</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../../Foreman.html">Foreman</a></li>
+        
+          <li><a href="../../Foreman/CLI.html">Foreman::CLI</a></li>
+        
+          <li><a href="../../Foreman/Distribution.html">Foreman::Distribution</a></li>
+        
+          <li><a href="../../Foreman/Engine.html">Foreman::Engine</a></li>
+        
+          <li><a href="../../Foreman/Engine/CLI.html">Foreman::Engine::CLI</a></li>
+        
+          <li><a href="../../Foreman/Engine/CLI/Color.html">Foreman::Engine::CLI::Color</a></li>
+        
+          <li><a href="../../Foreman/Env.html">Foreman::Env</a></li>
+        
+          <li><a href="../../Foreman/Export.html">Foreman::Export</a></li>
+        
+          <li><a href="../../Foreman/Export/Base.html">Foreman::Export::Base</a></li>
+        
+          <li><a href="../../Foreman/Export/Bluepill.html">Foreman::Export::Bluepill</a></li>
+        
+          <li><a href="../../Foreman/Export/Daemon.html">Foreman::Export::Daemon</a></li>
+        
+          <li><a href="../../Foreman/Export/Exception.html">Foreman::Export::Exception</a></li>
+        
+          <li><a href="../../Foreman/Export/Inittab.html">Foreman::Export::Inittab</a></li>
+        
+          <li><a href="../../Foreman/Export/Launchd.html">Foreman::Export::Launchd</a></li>
+        
+          <li><a href="../../Foreman/Export/Runit.html">Foreman::Export::Runit</a></li>
+        
+          <li><a href="../../Foreman/Export/Supervisord.html">Foreman::Export::Supervisord</a></li>
+        
+          <li><a href="../../Foreman/Export/Systemd.html">Foreman::Export::Systemd</a></li>
+        
+          <li><a href="../../Foreman/Export/Upstart.html">Foreman::Export::Upstart</a></li>
+        
+          <li><a href="../../Foreman/Helpers.html">Foreman::Helpers</a></li>
+        
+          <li><a href="../../Foreman/Process.html">Foreman::Process</a></li>
+        
+          <li><a href="../../Foreman/Procfile.html">Foreman::Procfile</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Foreman::Export::Systemd</h1>
+
+    <div id="description" class="description">
+      
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="export-method" class="method-detail ">
+          <a name="method-i-export"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">export</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="export-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/export/systemd.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">export</span>
+  <span class="ruby-keyword">super</span>
+
+  <span class="ruby-constant">Dir</span>[<span class="ruby-node">&quot;#{location}/#{app}*.target&quot;</span>].<span class="ruby-identifier">concat</span>(<span class="ruby-constant">Dir</span>[<span class="ruby-node">&quot;#{location}/#{app}*.service&quot;</span>]).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">file</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">clean</span> <span class="ruby-identifier">file</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">process_master_names</span> = []
+
+  <span class="ruby-identifier">engine</span>.<span class="ruby-identifier">each_process</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span>, <span class="ruby-identifier">process</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">next</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">engine</span>.<span class="ruby-identifier">formation</span>[<span class="ruby-identifier">name</span>] <span class="ruby-operator">&lt;</span> <span class="ruby-value">1</span>
+
+    <span class="ruby-identifier">process_names</span> = []
+
+    <span class="ruby-value">1</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-identifier">engine</span>.<span class="ruby-identifier">formation</span>[<span class="ruby-identifier">name</span>]) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">num</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">port</span> = <span class="ruby-identifier">engine</span>.<span class="ruby-identifier">port_for</span>(<span class="ruby-identifier">process</span>, <span class="ruby-identifier">num</span>)
+      <span class="ruby-identifier">write_template</span> <span class="ruby-string">&quot;systemd/process.service.erb&quot;</span>, <span class="ruby-node">&quot;#{app}-#{name}-#{num}.service&quot;</span>, <span class="ruby-identifier">binding</span>
+      <span class="ruby-identifier">process_names</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{app}-#{name}-#{num}.service&quot;</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-identifier">write_template</span> <span class="ruby-string">&quot;systemd/process_master.target.erb&quot;</span>, <span class="ruby-node">&quot;#{app}-#{name}.target&quot;</span>, <span class="ruby-identifier">binding</span>
+    <span class="ruby-identifier">process_master_names</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{app}-#{name}.target&quot;</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">write_template</span> <span class="ruby-string">&quot;systemd/master.target.erb&quot;</span>, <span class="ruby-node">&quot;#{app}.target&quot;</span>, <span class="ruby-identifier">binding</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- export-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- export-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

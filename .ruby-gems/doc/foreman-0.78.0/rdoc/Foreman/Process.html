@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=US-ASCII" http-equiv="Content-Type" />
+
+  <title>Class: Foreman::Process</title>
+
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../lib/foreman/process_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/foreman/process.rb">lib/foreman/process.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Object</p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-cwd">#cwd</a></li>
+          
+          <li><a href="#method-i-exec">#exec</a></li>
+          
+          <li><a href="#method-i-expanded_command">#expanded_command</a></li>
+          
+          <li><a href="#method-i-run">#run</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../Foreman.html">Foreman</a></li>
+        
+          <li><a href="../Foreman/CLI.html">Foreman::CLI</a></li>
+        
+          <li><a href="../Foreman/Distribution.html">Foreman::Distribution</a></li>
+        
+          <li><a href="../Foreman/Engine.html">Foreman::Engine</a></li>
+        
+          <li><a href="../Foreman/Engine/CLI.html">Foreman::Engine::CLI</a></li>
+        
+          <li><a href="../Foreman/Engine/CLI/Color.html">Foreman::Engine::CLI::Color</a></li>
+        
+          <li><a href="../Foreman/Env.html">Foreman::Env</a></li>
+        
+          <li><a href="../Foreman/Export.html">Foreman::Export</a></li>
+        
+          <li><a href="../Foreman/Export/Base.html">Foreman::Export::Base</a></li>
+        
+          <li><a href="../Foreman/Export/Bluepill.html">Foreman::Export::Bluepill</a></li>
+        
+          <li><a href="../Foreman/Export/Daemon.html">Foreman::Export::Daemon</a></li>
+        
+          <li><a href="../Foreman/Export/Exception.html">Foreman::Export::Exception</a></li>
+        
+          <li><a href="../Foreman/Export/Inittab.html">Foreman::Export::Inittab</a></li>
+        
+          <li><a href="../Foreman/Export/Launchd.html">Foreman::Export::Launchd</a></li>
+        
+          <li><a href="../Foreman/Export/Runit.html">Foreman::Export::Runit</a></li>
+        
+          <li><a href="../Foreman/Export/Supervisord.html">Foreman::Export::Supervisord</a></li>
+        
+          <li><a href="../Foreman/Export/Systemd.html">Foreman::Export::Systemd</a></li>
+        
+          <li><a href="../Foreman/Export/Upstart.html">Foreman::Export::Upstart</a></li>
+        
+          <li><a href="../Foreman/Helpers.html">Foreman::Helpers</a></li>
+        
+          <li><a href="../Foreman/Process.html">Foreman::Process</a></li>
+        
+          <li><a href="../Foreman/Procfile.html">Foreman::Procfile</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Foreman::Process</h1>
+
+    <div id="description" class="description">
+      
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="command-attribute-method" class="method-detail">
+          <a name="command"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">command</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="env-attribute-method" class="method-detail">
+          <a name="env"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">env</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(command, options={})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Create a <a href="Process.html">Process</a></p>
+
+<p>@param [String] command  The command to run @param [Hash]   options</p>
+
+<p>@option options [String] :cwd (./)  Change to this working directory before
+executing the process @option options [Hash]   :env ({})  Environment
+variables to set for this process</p>
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/process.rb, line 17</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">command</span>, <span class="ruby-identifier">options</span>={})
+  <span class="ruby-ivar">@command</span> = <span class="ruby-identifier">command</span>
+  <span class="ruby-ivar">@options</span> = <span class="ruby-identifier">options</span>.<span class="ruby-identifier">dup</span>
+
+  <span class="ruby-ivar">@options</span>[<span class="ruby-value">:env</span>] <span class="ruby-operator">||=</span> {}
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="cwd-method" class="method-detail ">
+          <a name="method-i-cwd"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">cwd</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns the working directory for this <tt>Process</tt></p>
+
+<p>@returns [String]</p>
+            
+
+            
+            <div class="method-source-code" id="cwd-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/process.rb, line 76</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">cwd</span>
+  <span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-ivar">@options</span>[<span class="ruby-value">:cwd</span>] <span class="ruby-operator">||</span> <span class="ruby-string">&quot;.&quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- cwd-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- cwd-method -->
+
+      
+        <div id="exec-method" class="method-detail ">
+          <a name="method-i-exec"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">exec</span><span
+              class="method-args">(options={})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Exec a <tt>Process</tt></p>
+
+<p>@param [Hash] options</p>
+
+<p>@option options :env ({}) Environment variables to set for this execution</p>
+
+<p>@return Does not return</p>
+            
+
+            
+            <div class="method-source-code" id="exec-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/process.rb, line 65</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">exec</span>(<span class="ruby-identifier">options</span>={})
+  <span class="ruby-identifier">env</span> = <span class="ruby-ivar">@options</span>[<span class="ruby-value">:env</span>].<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">options</span>[<span class="ruby-value">:env</span>] <span class="ruby-operator">||</span> {})
+  <span class="ruby-identifier">env</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>, <span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-constant">ENV</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-identifier">v</span> }
+  <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">chdir</span>(<span class="ruby-identifier">cwd</span>)
+  <span class="ruby-constant">Kernel</span>.<span class="ruby-identifier">exec</span> <span class="ruby-identifier">expanded_command</span>(<span class="ruby-identifier">env</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- exec-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- exec-method -->
+
+      
+        <div id="expanded_command-method" class="method-detail ">
+          <a name="method-i-expanded_command"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">expanded_command</span><span
+              class="method-args">(custom_env={})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Get environment-expanded command for a <tt>Process</tt></p>
+
+<p>@param [Hash] custom_env ({}) Environment variables to merge with defaults</p>
+
+<p>@return [String]  The expanded command</p>
+            
+
+            
+            <div class="method-source-code" id="expanded_command-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/process.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">expanded_command</span>(<span class="ruby-identifier">custom_env</span>={})
+  <span class="ruby-identifier">env</span> = <span class="ruby-ivar">@options</span>[<span class="ruby-value">:env</span>].<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">custom_env</span>)
+  <span class="ruby-identifier">expanded_command</span> = <span class="ruby-identifier">command</span>.<span class="ruby-identifier">dup</span>
+  <span class="ruby-identifier">env</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">val</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">expanded_command</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-node">&quot;$#{key}&quot;</span>, <span class="ruby-identifier">val</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">expanded_command</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- expanded_command-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- expanded_command-method -->
+
+      
+        <div id="run-method" class="method-detail ">
+          <a name="method-i-run"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">run</span><span
+              class="method-args">(options={})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Run a <tt>Process</tt></p>
+
+<p>@param [Hash] options</p>
+
+<p>@option options :env    ({})       Environment variables to set for this
+execution @option options :output ($stdout)  The output stream</p>
+
+<p>@returns [Fixnum] pid  The <tt>pid</tt> of the process</p>
+            
+
+            
+            <div class="method-source-code" id="run-source">
+<pre>
+<span class="ruby-comment"># File lib/foreman/process.rb, line 48</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">run</span>(<span class="ruby-identifier">options</span>={})
+  <span class="ruby-identifier">env</span>    = <span class="ruby-ivar">@options</span>[<span class="ruby-value">:env</span>].<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">options</span>[<span class="ruby-value">:env</span>] <span class="ruby-operator">||</span> {})
+  <span class="ruby-identifier">output</span> = <span class="ruby-identifier">options</span>[<span class="ruby-value">:output</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">$stdout</span>
+  <span class="ruby-identifier">runner</span> = <span class="ruby-node">&quot;#{Foreman.runner}&quot;</span>.<span class="ruby-identifier">shellescape</span>
+  
+  <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">chdir</span>(<span class="ruby-identifier">cwd</span>) <span class="ruby-keyword">do</span>
+    <span class="ruby-constant">Process</span>.<span class="ruby-identifier">spawn</span> <span class="ruby-identifier">env</span>, <span class="ruby-identifier">expanded_command</span>(<span class="ruby-identifier">env</span>), <span class="ruby-value">:out</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">output</span>, <span class="ruby-value">:err</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">output</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- run-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- run-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+
